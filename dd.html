@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/e4b06a80ef.js" crossorigin="anonymous"></script>
+</head>
+<title>Devils Dictionary Components</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700;900&display=swap" rel="stylesheet">
+
+<style>
+    :root {
+        --newsprint: #15232d;
+        --dd-red: #aa3925;
+        --paper: #F4F2EA;
+    }
+
+    body {
+        font-family: 'Roboto Slab', serif;
+        background-color: #F4F2EA;
+
+        /* BG Noise */
+        background-image: url("noise1.png");
+        border: 10px solid var(--newsprint);
+        box-sizing:content-box;
+    }
+
+    .paper {
+        color: var(--paper);
+    }
+
+    .newsprint {
+        color: var(--newsprint)
+    }
+
+    .bg-dd-red {
+        background-color: var(--dd-red);
+    }
+
+    .bg-newsprint {
+        background-color: var(--newsprint);
+    }
+
+    img {
+        filter:sepia();
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        color: #152D1B;
+    }
+
+    .def-p::first-letter {
+        font-weight: 900;
+        font-size: x-large;
+        color: var(--dd-red)
+    }
+
+    .dd-title {
+        word-spacing: .5em;
+    }
+</style>
+
+<body class='pa3'>
+    <div class='mw9 center'>
+    <!--* Title Area -->
+    <div class='flex flex-column flex-row-l items-left items-center-ns w-100 justify-between mb0'>
+        <p class='mb0 fw7 tc'>Vol. 127 - N. 39</p>
+        <h1 class='dd-title f2 f-headline-l fw9 mb0 tc mt2 ttu tracked'>The Devil's Dictionary</h1>
+        <p class='mb0 fw7 tc'>Price: Free</p>
+    </div>
+    <!--* Dateline -->
+    <h2 class='dd-date f4 tc'>SFB, Sunday, November 24, 1906</h2>
+
+    <!--* Menu Area -->
+    <div class='dd-menu bg-dd-red white f4 tc pv2 ph4 mb4'>
+        <span>
+            <a href='#a' class='pr2 white no-underline grow-large dib'>A</a>
+            <a href='#b' class='pr2 white no-underline grow-large dib'>B</a>
+            <a href='#c' class='pr2 white no-underline grow-large dib'>C</a>
+            <a href='#d' class='pr2 white no-underline grow-large dib'>D</a>
+            <a href='#e' class='pr2 white no-underline grow-large dib'>E</a>
+            <a href='#f' class='pr2 white no-underline grow-large dib'>F</a>
+            <a href='#g' class='pr2 white no-underline grow-large dib'>G</a>
+            <a href='#h' class='pr2 white no-underline grow-large dib'>H</a>
+            <a href='#i' class='pr2 white no-underline grow-large dib'>I</a>
+            <a href='#j' class='pr2 white no-underline grow-large dib'>J</a>
+            <a href='#k' class='pr2 white no-underline grow-large dib'>K</a>
+            <a href='#l' class='pr2 white no-underline grow-large dib'>L</a>
+            <a href='#m' class='pr2 white no-underline grow-large dib'>M</a>
+            <a href='#n' class='pr2 white no-underline grow-large dib'>N</a>
+            <a href='#o' class='pr2 white no-underline grow-large dib'>O</a>
+            <a href='#p' class='pr2 white no-underline grow-large dib'>P</a>
+            <a href='#q' class='pr2 white no-underline grow-large dib'>Q</a>
+            <a href='#r' class='pr2 white no-underline grow-large dib'>R</a>
+            <a href='#s' class='pr2 white no-underline grow-large dib'>S</a>
+            <a href='#t' class='pr2 white no-underline grow-large dib'>T</a>
+            <a href='#u' class='pr2 white no-underline grow-large dib'>U</a>
+            <a href='#v' class='pr2 white no-underline grow-large dib'>V</a>
+            <a href='#w' class='pr2 white no-underline grow-large dib'>W</a>
+            <a href='#x' class='pr2 white no-underline grow-large dib'>X</a>
+            <a href='#y' class='pr2 white no-underline grow-large dib'>Y</a>
+            <a href='#z' class='pr2 white no-underline grow-large dib'>Z</a>
+        </span>
+    </div>
+
+    <!--* wrapper -->
+    <div class='mw7 center pa3 bb-0 bt-0 b--dashed bw1'>
+
+        <!--* Letter Header  -->
+        <div id='#' class='bg-newsprint'>
+            <div><h2 class='f-headline ma0 pa3 di paper'>A</h2></div>
+        </div>
+
+        <!--* Definition -->
+        <!--* Word name -->
+        <h2 class='tc pa3 ba bw1 f2 mb0 ttu '>Altar</h2>
+
+        <!--* Image  -->
+        <img src='images/altar.jpg' class='db center mt4 mb3 mw5 w-90'>
+
+        <!--* Definition -->
+        <p class='def-p lh-copy tj'>The place whereupon the priest formerly raveled out the small intestine of the
+            sacrificial victim for purposes of divination and cooked its flesh for the gods. The word is now seldom
+            used, except with reference to the sacrifice of their liberty and peace by a male and a female tool.</p>
+
+        <!--* Quote -->
+        <p class='def-q i w-100 w-60-ns center f6 fw7 tj lh-copy'>
+            They stood before the altar and supplied
+            The fire themselves in which their fat was fried.
+            In vain the sacrifice!—no god will claim
+            An offering burnt with an unholy flame.
+        </p>
+        <!--* Cite -->
+        <p class='w-100 w-60-ns center tr fw1 f5'>- M.P. Nopput</p>
+    </div>
+
+    </div>
+
+</body>
+
+<script type='text/javascript'>
+
+</script>
+
+</html>
